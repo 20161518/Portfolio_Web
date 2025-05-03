@@ -1,0 +1,115 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: #f0f9f4; /* Verde muito claro (quase branco) */
+    color: #1a4d2e; /* Verde escuro para o texto */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: #1a4d2e;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Estilos Globais */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+    color: #1a4d2e; /* Título verde escuro */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #8aff8a; /* Verde bem claro para a linha */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #8aff8a; /* Borda verde clara */
+    background: transparent; /* Fundo transparente */
+    color: #1a4d2e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #8aff8a; /* Fundo verde claro no hover */
+    color: #f0f9f4; /* Texto verde muito claro no hover */
+}
+
+/* Cabeçalho */
+.header {
+    background: #1a4d2e; /* Verde escuro */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: #8aff8a; /* Verde claro no hover */
+}
