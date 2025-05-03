@@ -8,8 +8,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background: #f0f9f4; /* Verde muito claro (quase branco) */
-    color: #1a4d2e; /* Verde escuro para o texto */
+    background: #f0f9f4;
+    /* Verde muito claro (quase branco) */
+    color: #1a4d2e;
+    /* Verde escuro para o texto */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -47,7 +49,8 @@ img {
     text-align: center;
     position: relative;
     padding-bottom: 0.5rem;
-    color: #1a4d2e; /* Título verde escuro */
+    color: #1a4d2e;
+    /* Título verde escuro */
 }
 
 .section-title::after {
@@ -58,14 +61,17 @@ img {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: #8aff8a; /* Verde bem claro para a linha */
+    background: #8aff8a;
+    /* Verde bem claro para a linha */
 }
 
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    border: 2px solid #8aff8a; /* Borda verde clara */
-    background: transparent; /* Fundo transparente */
+    border: 2px solid #8aff8a;
+    /* Borda verde clara */
+    background: transparent;
+    /* Fundo transparente */
     color: #1a4d2e;
     border-radius: 5px;
     cursor: pointer;
@@ -74,18 +80,22 @@ img {
 }
 
 .btn:hover {
-    background: #8aff8a; /* Fundo verde claro no hover */
-    color: #f0f9f4; /* Texto verde muito claro no hover */
+    background: #8aff8a;
+    /* Fundo verde claro no hover */
+    color: #f0f9f4;
+    /* Texto verde muito claro no hover */
 }
 
 /* Cabeçalho */
 .header {
-    background: #1a4d2e; /* Verde escuro */
+    background: #1a4d2e;
+    /* Verde escuro */
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra mais suave */
 }
 
 .nav {
@@ -111,5 +121,158 @@ img {
 }
 
 .nav-link:hover {
-    color: #8aff8a; /* Verde claro no hover */
+    color: #8aff8a;
+    /* Verde claro no hover */
 }
+
+/* Restante do CSS (não comentado para brevidade) */
+
+/* Sobre Mim */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.about {
+    text-align: center;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a4d2e;
+}
+
+.skill-bar {
+    margin-bottom: 0.8rem;
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress {
+    background: #8aff8a;
+    width: 0%;
+    /* Ajustado via inline style no HTML */
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Formação */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1a4d2e;
+}
+
+.languages {
+    margin-top: 1rem;
+}
+
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    margin-bottom: 0.5rem;
+}
+
+.language-list li i {
+    margin-right: 0.5rem;
+    color: #8aff8a;
+}
+
+/* Portfólio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Alterado para minmax */
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item h4 {
+    margin: 1rem;
+    color: #1a4d2e;
+    font-size: 1.2rem;
+}
+
+.portfolio-item p {
+    margin: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Contato */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1a4d2e;
+}
+
+.form-group input,
+.form-group textarea {
